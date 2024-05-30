@@ -4,13 +4,13 @@
 ) => {
 
   const responseJson = decodeURIComponent(urlEncodedResponseJson);
-  if (/^Error Connecting To Remote Server\b/i.test(urlEncodedResponseJson)) {
+  if (/^Error Connecting To Remote Server\b/i.test(responseJson)) {
     return 'API is down, try again later';
   }
 
   try {
     const response = JSON.parse(responseJson);
-    const data = response.data;
+    const data = response['data'];
     
     let rank = `${data['currenttierpatched']} ${data['ranking_in_tier']} RR`;
 
