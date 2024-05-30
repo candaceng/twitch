@@ -9,7 +9,7 @@
   }
 
   try {
-    const response = JSON.parse(urlEncodedResponseJson);
+    const response = JSON.parse(responseJson);
     const data = response.data;
     
     let rank = `${data['currenttierpatched']} ${data['ranking_in_tier']} RR`;
