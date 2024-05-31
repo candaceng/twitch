@@ -13,7 +13,7 @@
     var date = new Date(); 
     var status = '';
     
-    for (i=0; i<=20; i++){ {
+    for (i=0; i<=20; i++) {
       var cur_date = new Date(data[i]['date']); 
       cur_date.setHours(cur_date.getHours() - 7); 
       
