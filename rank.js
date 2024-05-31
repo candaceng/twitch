@@ -1,4 +1,5 @@
 ((
+  /** @type {string} */ streamStartDateString,
   /** @type {string} */ urlEncodedGetMmrHistoryResponseJson,
 ) => {
 
