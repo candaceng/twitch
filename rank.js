@@ -2,7 +2,6 @@
   /** @type {string} */ streamUptimeString,
   /** @type {string} */ streamStartDateString,
   /** @type {string} */ urlEncodedGetMmrHistoryResponseJson,
-  /** @type {string} */ playerName,
 ) => {
 
   const getMmrHistoryResponseJson = decodeURIComponent(urlEncodedGetMmrHistoryResponseJson);
