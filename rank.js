@@ -1,6 +1,5 @@
 ((
   /** @type {string} */ streamUptimeString,
-  /** @type {string} */ streamStartDateString,
   /** @type {string} */ urlEncodedGetMmrHistoryResponseJson,
 ) => {
 
