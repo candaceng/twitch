@@ -35,13 +35,13 @@
     
     draws = draws==1? '1 draw':`${draws} draws`; 
     if (rr < 0) {
-      s = 'Lost';
+      status = 'Lost';
       rr = -rr;
     } else {
-      s = 'Gained';
+      status = 'Gained';
     }
     
-    return `${wins}W, ${losses}L, ${draws} (${s} ${rr} RR today)`;
+    return `${wins}W, ${losses}L, ${draws} (${status} ${rr} RR today)`;
   } catch (e) {
     return 'something went wrong with the API oop';
   }
