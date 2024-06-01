@@ -13,7 +13,7 @@
     var date = new Date(); 
     var status = '';
     
-    while(1) {
+    for (i=0; i<=20; i++) {
       var cur_date = new Date(data[i]['date']); 
       cur_date.setHours(cur_date.getHours() - 7); 
       
@@ -29,8 +29,6 @@
       } else {
         draws++;
       } 
-      
-      i++;
     } 
     
     draws = draws==1? '1 draw':`${draws} draws`; 
