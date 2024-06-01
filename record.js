@@ -19,7 +19,7 @@
       
       if (date.getDate() != cur_date.getDate()) break;
       
-      var mmr_change = data[i]['last_mmr_change']; 
+      var mmr_change = data[i]['mmr_change_to_last_game']; 
       rr += mmr_change; 
       
       if (mmr_change > 5) {
