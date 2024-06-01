@@ -13,11 +13,11 @@
     var date = new Date(); 
     var status = '';
     
-    for (i=0; i<=20; i++) {
+    while(1) {
       var cur_date = new Date(data[i]['date']); 
       cur_date.setHours(cur_date.getHours() - 7); 
       
-      if (date.getDate() != cur_date.getDate()) return `${wins}W, ${losses}L, ${draws} (${status} ${rr} RR today)`;
+      if (date.getDate() != cur_date.getDate()) break;
       
       var mmr_change = data[i]['last_mmr_change']; 
       rr += mmr_change; 
